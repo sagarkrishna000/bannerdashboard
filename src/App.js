@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
+import Dashboard from "./components/Dashboard";
+import "./index.css";
 
 function App() {
+  const [banner, setBanner] = React.useState({
+    description: "Elevate Your Learning Journey with TUF+",
+    timer: 60,
+    link: "https://takeuforward.org/plus",
+    visibility: true,
+  });
+
+  const updateBanner = (newBanner) => {
+    setBanner(newBanner);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App min-h-screen bg-gradient-to-r from-[#211112] to-[#0F0F0F] flex flex-col items-center">
+      <Navbar />
+      <Banner banner={banner} onUpdate={updateBanner} />
+      <Dashboard banner={banner} updateBanner={updateBanner} />
     </div>
   );
 }

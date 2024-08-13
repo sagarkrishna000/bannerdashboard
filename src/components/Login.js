@@ -7,7 +7,7 @@ const Login = ({ isOpen, onClose }) => {
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
       <div className="bg-[#191919] p-6 rounded-lg shadow-lg w-80">
         <h2 className="text-2xl font-bold text-white mb-2">Welcome Back to</h2>
-        <h1 className="text-4xl font-bold text-red-600 mb-4">takeUforward</h1>
+        <h1 className="text-4xl font-bold text-red-600 mb-4">Dashboard</h1>
 
         <form>
           <div className="mb-4">

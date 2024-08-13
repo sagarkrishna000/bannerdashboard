@@ -20,7 +20,7 @@ const Navbar = () => {
             className="text-5xl font-bold font-serif"
             style={{ color: "#D41F30" }}
           >
-            TUF
+            BannerDashboard
           </h1>
           <button
             onClick={handleLoginClick}

@@ -17,10 +17,10 @@ const Navbar = () => {
       <nav className="w-full bg-gradient-to-r from-[#160F10] to-[#0F0F0F] text-white p-4 shadow-lg">
         <div className="flex items-center justify-between max-w-screen-xl mx-auto px-4">
           <h1
-            className="text-5xl font-bold font-serif"
+            className="text-4xl font-bold font-serif"
             style={{ color: "#D41F30" }}
           >
-            BannerDashboard
+            Dashboard
           </h1>
           <button
             onClick={handleLoginClick}

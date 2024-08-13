@@ -20,7 +20,7 @@ const Navbar = () => {
             className="text-4xl font-bold font-serif"
             style={{ color: "#D41F30" }}
           >
-            Dashboard
+            Banner
           </h1>
           <button
             onClick={handleLoginClick}
